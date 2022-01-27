@@ -33,6 +33,7 @@ a {
   color: var(--title-text-color);
   margin: 0;
   padding: 0;
+  display: inline-block;
 }
 
 button {
@@ -120,8 +121,8 @@ img {
   align-items: center;
 }
 
-.header-item:hover a,
-.header-item:focus a {
+.header-item a:hover,
+.header-item a:focus {
   color: var(--accent-color);
 }
 
@@ -179,7 +180,6 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
   max-width: 1600px;
 }
 
@@ -220,10 +220,15 @@ img {
 }
 
 .qualities-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+
+  margin-bottom: 30px;
+
   background: #f5f4fa;
   border-radius: 4px;
-  padding: 25px 100px;
-  margin-bottom: 30px;
 }
 
 .qualities-icon {
@@ -291,7 +296,7 @@ img {
 }
 
 .team-desription {
-  padding: 30px 0px 16px 0px;
+  padding: 30px 0px;
 }
 
 .team-desription h3 {
@@ -300,14 +305,11 @@ img {
   color: var(--title-text-color);
 }
 
-.team-icons-list {
-  display: flex;
-  justify-content: center;
-
-  padding-bottom: 30px;
+.team-desription p {
+  margin-bottom: 16px;
 }
 
-.team-icons-item {
+.team-icons-list {
   display: flex;
   justify-content: center;
 }
@@ -317,12 +319,15 @@ img {
 }
 
 .team-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 44px;
   height: 44px;
 
   border-radius: 50%;
   color: var(--team-link-color);
-  padding: 12px;
 }
 
 .team-icon {
@@ -349,8 +354,9 @@ img {
 }
 
 .clients-link {
-  display: inline-block;
-  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   height: 92px;
   width: 170px;
@@ -384,11 +390,17 @@ img {
 }
 .conteiner.bottom {
   display: flex;
+  align-items: baseline;
 }
 .conteiner.bottom > a {
   display: inline-block;
   margin-bottom: 20px;
 }
+
+.logo-begin.footer-logo {
+  margin-bottom: 20px;
+}
+
 .logo-end-footer {
   color: var(--main-bcg-color);
 }
@@ -408,7 +420,6 @@ img {
 
 .footer-networks {
   margin-left: 70px;
-  margin-top: 12px;
 }
 
 .footer-net-title {
@@ -433,13 +444,14 @@ img {
 .footer-net-link {
   display: flex;
   align-items: center;
+  justify-content: center;
+
   width: 44px;
   height: 44px;
 
   border-radius: 50%;
   color: var(--main-bcg-color);
   background-color: var(--footer-icons-bg);
-  padding: 12px;
 }
 
 .footer-net-link:hover,
@@ -516,8 +528,8 @@ img {
   margin-bottom: 30px;
 }
 
-.portfolio-net-item:hover,
-.portfolio-net-item:focus {
+.portfolio-net-link:hover,
+.portfolio-net-link:focus {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
